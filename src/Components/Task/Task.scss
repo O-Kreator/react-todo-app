@@ -1,0 +1,64 @@
+li {
+  padding: 8px 0;
+
+  & > label {
+    display: block;
+    
+    height: 48px;
+    font-size: 18px;
+    line-height: 48px;
+
+    cursor: pointer;
+
+    & > input {
+      display: none;
+    }
+
+    & > div.checkbox {
+      position: relative;
+      top: 3px; 
+
+      display: inline-block;
+      margin: 0 24px;
+
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgb(0, 0, 70);
+
+      transition-property: border, background;
+      transition-duration: .2s;
+
+      & + span {
+        transition-duration: .2s;
+      }
+    }
+  }
+}
+
+input[type="checkbox"]:checked {
+  & + div.checkbox {
+    border: 2px solid rgb(80, 130, 255);
+    background: rgb(80, 130, 255);
+
+    & + span {
+      color: rgb(200, 200, 220);
+      text-decoration: line-through;
+    }
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 2px;
+      left: 5px;
+
+      width: 4px;
+      height: 8px;
+      border: 2px solid rgb(0, 0, 70);
+      border-top: 0;
+      border-left: 0;
+
+      transform: rotate(45deg);
+    }
+  }
+}
