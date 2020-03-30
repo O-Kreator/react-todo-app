@@ -1,0 +1,21 @@
+div.button_wrapper {
+  padding: 8px 0;
+
+  & > button {
+    border: 0;
+    outline: 0;
+    background: none;
+
+    height: 48px;
+    margin-left: 68px;
+    padding: 0;
+    
+    color: rgb(255, 70, 70);
+    font-size: 18px;
+    line-height: 52px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration: underline;
+
+    cursor: pointer;
+  }
+}
