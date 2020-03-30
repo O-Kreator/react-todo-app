@@ -1,0 +1,61 @@
+form {
+  position: relative;
+  
+  background: white;
+  height: 72px;
+
+  padding: 16px;
+  padding-left: 72px;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 70, .08);
+  border-radius: 36px;
+
+  & > input {
+    border: 0;
+    background: none;
+    outline: 0;
+
+    margin: 6px 0;
+
+    width: calc(100% - 56px);
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: rgb(0, 0, 70);
+  } 
+
+  & > button {
+    position: absolute;
+
+    top: 16px;
+    right: 16px;
+
+    background: white;
+    border: 0;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 11px;
+
+    transition-property: background;
+    transition-duration: .2s;
+
+    cursor: pointer;
+
+    & > svg line {
+      stroke: rgb(80, 130, 255);
+
+      transition-property: stroke;
+      transition-duration: .2s;
+    }
+
+    &:hover {
+      background: rgb(80, 130, 255);
+
+      & > svg line {
+        stroke: white;
+      }
+    }
+  }
+}
