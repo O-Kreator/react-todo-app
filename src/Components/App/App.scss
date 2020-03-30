@@ -1,0 +1,19 @@
+html, body {
+  font-family: 'Noto Sans KR', sans-serif;
+
+  background: rgb(249, 249, 251);
+}
+
+body {
+  color: rgb(0, 0, 70);
+
+  & * {
+    box-sizing: border-box;
+  }
+
+  & div.app {
+    margin: 64px auto 0;
+    width: calc(100% - 32px);
+    max-width: 640px;
+  }
+}
